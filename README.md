@@ -6,7 +6,7 @@
 PSVStrip v0.1 - http://kippykip.com
 
 **Description:**
-   This is a small tool to strip out the unique license and header data found in PlayStation Vita (.PSV) games dumped with https://github.com/motoharu-gosuto/psvgamesd. 
+   This is a small tool to strip out the unique license and header data found in PlayStation Vita (.PSV) games dumped with https://github.com/motoharu-gosuto/psvgamesd. \
    Since having multiple copies of the same PSVita game will actually contain slightly different license data, this tool provides a way so that hashes can be compared with other dumps for verification/preservation purposes, or so the unique data can be backed up for personal use in the form of a .PSVE file.
 
    This program is an attempt to be a replacement for https://github.com/FakeShemp/VitaLicenseEditor
@@ -49,9 +49,9 @@ PSVStrip v0.1 - http://kippykip.com
 
 ## Additional Credits and Sources:
 **iCEQB**: For explaining in detail on how the stripping process should work, as well as explaining parts of the .PSV format.\
-[Discussion thread for No-Intro](http://forums.no-intro.org/viewtopic.php?f=2&t=3443/).
-**motoharu-gosuto**: Creator of [psvgamesd](https://github.com/motoharu-gosuto/psvgamesd/).
-**FakeShemp**: Creator of [VitaLicenseEditor](https://github.com/FakeShemp/VitaLicenseEditor/).
+[Discussion thread for No-Intro](http://forums.no-intro.org/viewtopic.php?f=2&t=3443/).\
+**motoharu-gosuto**: Creator of [psvgamesd](https://github.com/motoharu-gosuto/psvgamesd/).\
+**FakeShemp**: Creator of [VitaLicenseEditor](https://github.com/FakeShemp/VitaLicenseEditor/).\
 
 ## Support:
 I hope that you find this tool useful!
