@@ -51,7 +51,7 @@ PSVStrip v0.1 - http://kippykip.com
 **iCEQB**: For explaining in detail on how the stripping process should work, as well as explaining parts of the .PSV format.\
 [Discussion thread for No-Intro](http://forums.no-intro.org/viewtopic.php?f=2&t=3443/).\
 **motoharu-gosuto**: Creator of [psvgamesd](https://github.com/motoharu-gosuto/psvgamesd/).\
-**FakeShemp**: Creator of [VitaLicenseEditor](https://github.com/FakeShemp/VitaLicenseEditor/).\
+**FakeShemp**: Creator of [VitaLicenseEditor](https://github.com/FakeShemp/VitaLicenseEditor/).
 
 ## Support:
 I hope that you find this tool useful!
