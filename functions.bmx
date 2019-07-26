@@ -30,6 +30,14 @@ Function StripDoubleSlashes:String(SourceString:String)
 	EndIf
 End Function
 
+Function StripExtension:String(SourceString:String)
+	If(Right(Lower(SourceString), 4) = ".psv")
+		Return Left(SourceString, Len(SourceString) - 4)
+	Else
+		Return SourceString
+	EndIf
+EndFunction
+
 Function GetFolderPath:String(FilePaths:String[])
 	Local NewString:String
 	For Local x = 0 To Len(FilePaths) - 2 '(-1, and -1 cause I don't want file name)

@@ -2,8 +2,9 @@
 
 
 
+
 # PSVStrip
-PSVStrip v0.1 - http://kippykip.com
+PSVStrip v0.2 - http://kippykip.com
 
 **Description:**
    This is a small tool to strip out the unique license and header data found in PlayStation Vita (.PSV) games dumped with https://github.com/motoharu-gosuto/psvgamesd. \
@@ -30,9 +31,21 @@ PSVStrip v0.1 - http://kippykip.com
  - Maybe find a way of adding fake license data, so stripped games are bootable again without the need of a .PSVE file.
 
 **Version History**
-
-    Version 0.1
-        - Initial release
+    Version 0.2
+        - Fixed a minor mistake where I listed "-psvstrip" twice when the program listed arguments.
+        - [Fixed a bug where the program where it would trim extensions off any path.](https://github.com/Kippykip/PSVStrip/issues/1)
+        - Added drag & drop batch files like [SBITools](https://github.com/Kippykip/SBITools) :
+		
+    - PSVSTRIP.bat
+	    - Drag a .PSV file onto it, and it'll strip to filename_strip.* files.
+	- PSVDIRSTRIP.bat
+	    - Drag a directory of full of .PSV files and it'll strip to PSVExport\filename_strip.* 	
+	- PSVAPPLYPSVE.bat
+	    - Basically a really weak GUI version of the -applypsve command written in batch.
+	    It asks for paths step by step. For people with no knowledge on the command line.
+		
+   Version 0.1
+       - Initial release
 ## PSVE File Format Specifications
 
     *HEADER*

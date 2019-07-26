@@ -1,7 +1,7 @@
 Include "functions.bmx"
 
 'Main Program
-Print "PSVStrip v0.1 - http://kippykip.com"
+Print "PSVStrip v0.2 - http://kippykip.com"
 Global Prog:Int = 0
 
 'Are there arguments?
@@ -23,7 +23,7 @@ Select Prog
 	Case 2
 		
 		Try
-			ExportPSV(StripDoubleSlashes(Left(AppArgs[2], Len(AppArgs[2]) - 4)), StripDoubleSlashes(Left(AppArgs[3], Len(AppArgs[3]) - 4)))
+			ExportPSV(StripDoubleSlashes(StripExtension(AppArgs[2])), StripDoubleSlashes(StripExtension(AppArgs[3])))
 			Print "Export complete!"
 			Delay 5000
 		Catch ex:Object
@@ -54,7 +54,7 @@ Select Prog
 		Print ""
 		Print "PSVStrip.exe -dirstrip " + Chr(34) + "C:\CoolGameRips\" + Chr(34) + " " + Chr(34) + "C:\CoolGameRips\StrippedDumps\" + Chr(34)
 		Print ""
-		Print "PSVStrip.exe -psvstrip " + Chr(34) + "C:\CoolGameRips\r4-noiregbhj_stripped.psv" + Chr(34) + " " + Chr(34) + "C:\CoolGameRips\r4-noiregbhj.psv" + Chr(34) + " " + Chr(34) + "C:\CoolGameRips\r4-noiregbhj_stripped.psve" + Chr(34)
+		Print "PSVStrip.exe -applypsve " + Chr(34) + "C:\CoolGameRips\r4-noiregbhj_stripped.psv" + Chr(34) + " " + Chr(34) + "C:\CoolGameRips\r4-noiregbhj.psv" + Chr(34) + " " + Chr(34) + "C:\CoolGameRips\r4-noiregbhj_stripped.psve" + Chr(34)
 		Print ""
 		Delay 1000
 End Select
